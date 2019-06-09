@@ -8,10 +8,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 
 ## Online
-
+https://action-labs-test.herokuapp.com/
 
 ## Projetos adicionais, apesar de não ser o foco, acabei fazendo um workshop de treinamento para a equipe de desenvolvimento frontend da Livetouch utilizando redux no projeto.
 https://github.com/juillianlee/workshop-angular
 https://github.com/juillianlee/workshop-angular-day2
 
-## Provalmente ainda existem vários pontos de melhorias tanto na parte de código quanto em conhecimento, mas posso garantir que tenho muito a agregar a sua equipe assim como espero aprender muito com vocês também.
+## Provalmente ainda existem vários pontos de melhorias tanto na parte de código quanto em conhecimento sobre css principalmente, mas posso garantir que tenho muito a agregar a sua equipe assim como espero aprender muito com vocês também.
