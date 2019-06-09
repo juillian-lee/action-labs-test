@@ -1,0 +1,15 @@
+<div class="input-group search">
+    <input 
+      [placeholder]="placeholder" 
+      class="form-control py-2 border-right-0" 
+      type="text" 
+      [value]="value ? value : ''"
+      (keyup)="onKeyUp($event)"
+      [disabled]="disable"
+    />
+    <span class="input-group-append">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-search"></i>
+      </div>
+    </span>
+  </div>

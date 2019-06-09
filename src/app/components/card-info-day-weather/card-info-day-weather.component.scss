@@ -1,0 +1,75 @@
+.temperature {
+  width: 200px;
+  height: 208px;
+  border-radius: 4px;
+  border: solid 2px #f0f0f0;
+  padding: 0px;
+
+  .temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 104px;
+    width: 100%;
+    opacity: 0.75;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #3c3c3c;
+    background-color: #f0f0f0;
+  }
+  .icon {
+    font-size: 14px;
+    font-style: italic;
+    color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 13px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      opacity: 0.75;
+    }
+  }
+}
+
+.table {
+  td {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #3c3c3c;
+  }
+  td,
+  th {
+    border-top: none;
+  }
+  .max,
+  .min {
+    color: #b30000;
+    font-weight: bold;
+  }
+  .min {
+    color: #4a90e2;
+  }
+}
+
+.info-day {
+  .table {
+    height: 200px;
+    td,
+    th {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      color: #3c3c3c;
+    }
+  }
+}

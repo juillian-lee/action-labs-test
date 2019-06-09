@@ -1,0 +1,84 @@
+.card-weather {
+  cursor: pointer;
+  width: 620px;
+  height: 170px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  .col-4 {
+    padding: 0px;
+  }
+
+  .temperature {
+    width: 200px;
+    height: 138px;
+    border-radius: 4px;
+    border: solid 1px #f0f0f0;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      opacity: 0.75;
+      font-size: 48px;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    margin-left: 20px;
+    .title {
+      font-size: 24px;
+      color: #39a3db;
+      font-weight: bold;
+    }
+  }
+
+  .info {
+    margin-top: 20px;
+    .min,
+    .max {
+      color: #3c3c3c;
+      opacity: 0.5;
+      font-size: 14px;
+      margin-right: 46px;
+    }
+    .min {
+      margin-right: 49px;
+    }
+    .temp-min,
+    .temp-max {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+    .temp-min {
+      color: #b30000;
+    }
+    .info-min {
+      margin-top: 8px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    div {
+      opacity: 0.75;
+      font-size: 14px;
+      text-align: center;
+      color: #3c3c3c;
+    }
+  }
+}

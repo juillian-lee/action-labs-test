@@ -1,0 +1,20 @@
+<div class="row list-days">
+  <div class="col-12">
+    <h1>5 day weather forecast <small>every 3 hours</small></h1>
+  </div>
+  <div class="col-12">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let forecast of listForecast; let index = index">
+          <th style="width: 140px" scope="row">{{forecast.dt * 1000 | date: 'EE d MMM'}}<br /> <small>{{forecast.dt * 1000 | date: 'H:mm'}}</small></th>
+          <td class="description">
+            <img [src]="'https://openweathermap.org/img/w/'+forecast.weather[0].icon+'.png'" />
+            <span>{{forecast.weather[0].description}}</span>
+          </td>
+          <td class="max">{{forecast.main.temp_max}} °C</td>
+          <td class="min">{{forecast.main.temp_min}} °C</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

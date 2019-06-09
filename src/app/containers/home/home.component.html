@@ -1,0 +1,9 @@
+<div class="main">
+  <div class="box-input">
+    <h1 class="title">WEATHER IN YOUR CITY</h1>
+    <app-search-input [placeholder]="'Your city name'"  (onSearch)="onSearch($event)"></app-search-input>
+  </div>
+  <div class="cards">
+    <app-card-weather [routerLink]="[weather.id]"   [weather]="weather" *ngFor="let weather of listWeather$ | async"></app-card-weather>
+  </div>
+</div>

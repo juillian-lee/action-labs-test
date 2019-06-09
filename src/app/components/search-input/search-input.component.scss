@@ -1,0 +1,44 @@
+$placeholder-color: #3c3c3c;
+
+.search {
+  width: 460px;
+  height: 48px;
+  margin: 0 auto;
+  height: 48px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+  .fa-search {
+    color: #39a3db;
+  }
+
+  input {
+    height: 48px;
+  }
+
+  .form-control:disabled, .form-control[readonly] {
+    background: #ffffff;
+  }
+
+  .input-group-text {
+    padding-right: 16px;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+}
+
+
+::-webkit-input-placeholder {
+  color: $placeholder-color;
+}
+
+:-ms-input-placeholder {
+  color: $placeholder-color;
+}
+
+::placeholder {
+  color: $placeholder-color;
+}

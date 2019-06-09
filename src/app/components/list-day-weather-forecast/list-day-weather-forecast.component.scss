@@ -1,0 +1,75 @@
+.table {
+  td {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #3c3c3c;
+  }
+  td,
+  th {
+    border-top: none;
+  }
+  .max,
+  .min {
+    color: #b30000;
+    font-weight: bold;
+  }
+  .min {
+    color: #4a90e2;
+  }
+}
+
+.list-days {
+  margin-top: 48px;
+  h1 {
+    font-size: 24px;
+    color: #3c3c3c;
+
+    small {
+      opacity: 0.5;
+      font-size: 12px;
+      font-style: italic;
+      color: #3c3c3c;
+    }
+  }
+
+  .table {
+    margin-top: 16px;
+    height: auto;
+    tr {
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      height: 96px;
+      border-left: 8px solid transparent;
+    }
+
+    tr.active {
+      background: #f0f0f0;
+      border-left-color: #39a3db;
+    }
+
+    td.description {
+      width: 250px;
+    }
+
+    th {
+      width: 140px;
+      padding-left: 40px;
+      small {
+        opacity: 0.5;
+        font-style: italic;
+        color: #3c3c3c;
+      }
+    }
+
+    td {
+      padding-left: 67px;
+      span {
+        opacity: 0.75;
+        font-size: 14px;
+        font-style: italic;
+        color: #3c3c3c;
+      }
+    }
+  }
+}

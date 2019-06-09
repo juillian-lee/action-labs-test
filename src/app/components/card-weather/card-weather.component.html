@@ -1,0 +1,29 @@
+<div class="row card-weather">
+  <div class="col-4">
+    <div class="temperature">
+      <span>{{weather.main.temp}}°С</span>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class="content">
+      <div class="title">
+        {{weather.name}}, {{weather.sys.country}}
+        <img [src]="flag" />
+      </div>
+      <div class="info">
+        <div>
+          <span class="max">Máx</span>
+          <span class="temp-max">{{weather.main.temp_max}} °C</span>
+        </div>
+        <div class="info-min">
+          <span class="min">Mín</span>
+          <span class="temp-min">{{weather.main.temp_min}} °C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-3 footer">
+    <img [src]="icon" />
+    <div>Sky is Clear</div>
+  </div>
+</div>

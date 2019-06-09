@@ -1,0 +1,15 @@
+<div class="main" *ngIf="weather$ | async as weather">
+  <a [routerLink]="['/']"><i class="fas fa-arrow-left back"></i></a>
+  <div class="box-input">
+    <app-search-input [disable]="true" [placeholder]="''" [value]="weather.name"></app-search-input>
+  </div>
+  <div class="container">
+    <h1 class="title">Weather in {{weather.name}}, {{weather.sys.country}}</h1>
+    <p>{{weather.dt * 1000 | date: 'H:mm MMM d'}}</p>
+
+    <div class="box-weather">
+      <app-card-info-day-weather [weather]="weather"></app-card-info-day-weather>
+      <app-list-day-weather-forecast [listForecast]="listForecast$ | async"></app-list-day-weather-forecast>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+$bg-color-main: #39a3db;
+
+.main {
+  .back {
+    position: absolute;
+    color: #ffffff;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+  }
+
+  .box-input {
+    background: $bg-color-main;
+    height: 120px;
+    padding-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 780px;
+
+    .title {
+      margin-top: 40px;
+      font-size: 36px;
+      text-align: center;
+      color: #3c3c3c;
+    }
+    p {
+      opacity: 0.5;
+      font-size: 14px;
+      color: #3c3c3c;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .box-weather {
+      margin-top: 32px;
+      padding: 40px;
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+    }
+  }
+}
